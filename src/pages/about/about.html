@@ -14,8 +14,9 @@
   </div>
   <div text-center class="headline">
     <!-- pon tu nombre aqui -->
-    <h2>Antonella RR</h2>
-  <p> Estudiante</p>
+    <h2>{{datos.nombre}}</h2>
+  <p> {{datos.ocupacion}}</p>}
+
   </div>
   <!-- lista de datos a partir de aqui -->
 <div>
@@ -24,18 +25,18 @@
         <ion-list>
           <ion-item>
             <ion-icon name="flag" item-start></ion-icon>
-            <h3>ORIGEN</h3>
-            <p>Lima-Peru</p>
+            <h3>{{origen.titulo_origen}}</h3>
+            <p>{{origen.origen}}</p>
           </ion-item>
           <ion-item>
             <ion-icon name="ios-mail" item-start></ion-icon>
-            <h3>CORREO ELECTRONICO</h3>
-            <p> Antonella.RR </p>
+            <h3>{{email.titulo}}</h3>
+            <p> {{email.dato}} </p>
           </ion-item>
         </ion-list>
       </ion-slide>
    <ion-slide>
-     <p>Hola soy Rossy </p>
+     <p>Hola soy Rossy tengo {{datos.edad}}</p>
    </ion-slide>
  </ion-slides>
 </div>
