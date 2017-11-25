@@ -10,7 +10,7 @@ export class AboutPage {
   informacion: any[]= [
     {
       titulo:"origen",
-      dato:"Liverpool, UK"
+      dato:"Liverpool, UK",
       icono:"flag"
     },
     {
