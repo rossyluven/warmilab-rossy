@@ -9,9 +9,68 @@
 <ion-content no-padding>
   <div class="banner">
     <!-- las imagenes aqui -->
+    <ion-slides>
+      <ion-slide>
+    <img src="assets/img/paul.jpg" class="background" />
+      </ion-slide>
+      <ion-slide>
+    <img src="assets/img/portada.jpg" class="background2" />
+      </ion-slide>
+    </ion-slides>
+    <img src="assets/img/paulprofile.jpg" class="avatar"/>
   </div>
   <div text-center class="headline">
     <!-- pon tu nombre aqui -->
+    <h2> Paul McCartney </h2>
+      <p> Singer/Bass/Writer/Ex-Beatle/Vegetarian/etc. </p>
+
   </div>
   <!-- lista de datos a partir de aqui -->
+  <div>
+    <ion-slides pager>
+      <ion-slide>
+        <ion-list no-lines>
+      <ion-item *ngFor="let elemento of informacion">
+          <ion-icon [name]="elemento. icono" item-start></ion-icon>
+        <h3>{{elemento.titulo}}</h3>
+        <p>
+          {{elemento.dato}}
+        </p>
+      </ion-item>
+
+    </ion-list>
+      </ion-slide>
+
+      <ion-slide>
+<p>
+  Hi!
+  I'm out there!
+  1/4 of The Beatles
+</p>
+      </ion-slide>
+    </ion-slides>
+
+  </div>
+  <div text-center>
+
+    <ion-row>
+      <ion-col>
+    <button ion-button icon-only clear>
+    <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+  </ion-col>
+      <ion-col>
+      <button ion-button icon-only clear>
+      <ion-icon name="logo-twitter"></ion-icon>
+      </button>
+    </ion-col>
+    <ion-col>
+       <button ion-button icon-only clear>
+      <ion-icon name="logo-instagram"></ion-icon>
+    </button>
+    </ion-col>
+   </ion-row>
+
+
+  </div>
 </ion-content>

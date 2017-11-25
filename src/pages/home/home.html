@@ -8,4 +8,13 @@
   <!-- el componente para ingrear un nuevo TODO aqui -->
 
   <!-- la lista de TODOs aqui -->
+  <div>
+    <ion-list>
+    <ion-item *ngFor="let componente of quehaceres">
+      <ion-label>{{componente.description}}</ion-label>
+      <ion-checkbox [checked]="componente.done"></ion-checkbox>
+    </ion-item>
+    </ion-list>
+
+  </div>
 </ion-content>
