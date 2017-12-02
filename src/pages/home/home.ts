@@ -49,7 +49,23 @@ export class HomePage implements OnInit {
 
   ngOnInit() {
     // codigo al iniciar el componente
+    this.agregarQuehacer("comer", false);
+    this.agregarQuehacer("estudiar", true);
+    this.agregarQuehacer("armar el cubo de rubik", true);
   }
+
+
+   agregarQuehacer(nuevoQuehacer: string, terminado:boolean) {
+      if (nuevoQuehacer !== ""){
+        this.quehaceres.push({
+          description:nuevoQuehacer,
+          done:terminado
+
+        });
+      }
+
+
+    }
 
   addTodo(todo: string) {
     // codigo para agregar TODO

@@ -6,9 +6,19 @@
 
 <ion-content>
   <!-- el componente para ingrear un nuevo TODO aqui -->
+  <div>
+    <ion-item>
+      <ion-label floating> nuevo quehacer</ion-label>
+      <ion-input type="text"#quehacerImput></ion-input>
+    </ion-item>
+  </div>
+  <div padding>
+    <button ion-button block (click)="agregarQuehacer(quehacerImput.value,false)">agregar</button>
+  </div>
 
   <!-- la lista de TODOs aqui -->
   <div>
+
     <ion-list>
     <ion-item *ngFor="let componente of quehaceres">
       <ion-label>{{componente.description}}</ion-label>
