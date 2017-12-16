@@ -25,7 +25,7 @@
   <div>
 
     <ion-list>
-      <ion-item *ngFor="let componente of quehaceres">
+      <ion-item *ngFor="let componente of listaQuehaceres()">
         <ion-label>{{componente.description}}</ion-label>
         <ion-checkbox [checked]="componente.done"></ion-checkbox>
       </ion-item>
